@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp"
+              android:orientation="vertical" >
+
+    <ViewFlipper android:id="@+id/call_view_flipper"
+                 android:layout_height="match_parent"
+                 android:layout_width="match_parent">
+
+        <!-- Incoming -->
+        <RelativeLayout android:layout_height="match_parent"
+                      android:layout_width="match_parent"
+                      android:id="@+id/incoming_call_layout">
+
+            <ImageView
+                android:id="@+id/middle_incoming"
+                android:layout_centerInParent="true"
+                android:layout_width="0dp"
+                android:layout_height="64dp"/>
+
+            <TextView
+                android:id="@+id/incoming_call_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@id/middle_incoming"
+                android:textSize="18sp"
+                android:text="@string/incoming_call"/>
+
+            <TextView
+                android:id="@+id/sipIdIncoming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/incoming_call_label"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:id="@+id/accept_incoming_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/accept_call"/>
+
+                <ImageView
+                    android:id="@+id/reject_incoming_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/reject_call"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <!-- InProgress -->
+        <RelativeLayout android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:id="@+id/inprogress_call_layout">
+
+            <ImageView
+                android:id="@+id/middle_inprogress"
+                android:layout_centerInParent="true"
+                android:layout_width="0dp"
+                android:layout_height="64dp"/>
+
+            <TextView
+                android:id="@+id/inprogress_call_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@id/middle_inprogress"
+                android:textSize="18sp"
+                android:text="@string/in_progress_call"/>
+
+            <TextView
+                android:id="@+id/sipIdInProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/inprogress_call_label"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/call_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/sipIdInProgress"
+                android:textSize="22sp"
+                />
+
+            <Button
+                android:id="@+id/end_in_progress_call_button"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#c80000"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="32dp"
+                android:text="@string/end_in_progress_call"
+                />
+
+        </RelativeLayout>
+
+        <!-- Outgoing -->
+        <RelativeLayout android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:id="@+id/outgoing_call_layout">
+
+            <ImageView
+                android:id="@+id/middle_outgoing"
+                android:layout_centerInParent="true"
+                android:layout_width="0dp"
+                android:layout_height="64dp"/>
+
+            <TextView
+                android:id="@+id/outgoing_call_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/middle_outgoing"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:text="@string/outgoing_call"/>
+
+            <TextView
+                android:id="@+id/sipIdOutgoing"
+                android:layout_below="@id/outgoing_call_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                />
+
+            <Button
+                android:id="@+id/cancel_outgoing_call_button"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="32dp"
+                android:background="#c80000"
+                android:layout_alignParentBottom="true"
+                android:text="@string/cancel_outgoing_call"
+                />
+
+        </RelativeLayout>
+
+
+
+    </ViewFlipper>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">VoIP</string>
+	
+	<string name="outgoing_call">"Łączenie"</string>
+    <string name="cancel_outgoing_call">"Przerwij</string>
+    <string name="incoming_call">"Połączenie przychodzące</string>
+    <string name="in_progress_call">"Połączenie</string>
+    <string name="end_in_progress_call">"Zakończ</string>
+    <string name="login_label">Login</string>
+    <string name="password_label">Hasło</string>
+    <string name="login_advanced_label">Zaawansowane</string>
+    <string name="domain_label">Nazwa domeny</string>
+    <string name="server_address_label">Adres servera</string>
+    <string name="server_port_label">Port serwera</string>
+    <string name="restore_default_settings">Przywróć domyślne</string>
+    <string name="no_internet_access">Brak połączenia z internetem</string>
+    <string name="missed_call">Nieodebrane połączenie</string>
+    <string name="not_logged_in">Zaloguj się by móc\nwykonywać połączenia</string>
+    <string name="sip_settings_title">Ustawienia VoIP</string>
+    <string name="save_settings">Zatwierdź</string>
+    <string name="sip_status">Status SIP</string>
+    <string name="sip_connected">Połączono z serwerem</string>
+    <string name="sip_disconnected">Brak połączenia</string>
+    <string name="voip_login_error">Błąd logowania, spróbuj ponownie</string>
+    <string name="starting_sip_error">Błąd podczas inicjalizowania systemu VoIP</string>
+    <string name="sip_system">System VoIP</string>
+    <string name="login">Zaloguj</string>
+</resources>
